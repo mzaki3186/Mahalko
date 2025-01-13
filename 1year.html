@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background: linear-gradient(135deg, #d8bfd8, #e6e6fa);
+            margin: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-bottom: 3px solid #dda0dd;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #9370db;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .timeline-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            max-width: 600px;
+            width: 80%;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: #9370db;
+            border-radius: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .timeline-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-top: 3px solid #dda0dd;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        footer a {
+            color: #9370db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy 1st Anniversary, My Love!</h1>
+        <p>One year of memories, laughter, and love. Here's to us!</p>
+    </header>
+
+    <section class="timeline">
+        <div class="timeline-item">
+            <h2>How It All Began</h2>
+            <p>On this day a year ago, we started the most beautiful journey of our lives.</p>
+            <img src="images/how-it-began.jpg" alt="A memorable photo from when it all began">
+        </div>
+        <div class="timeline-item">
+            <h2>Our First Adventure</h2>
+            <p>Remember our first trip together? It was unforgettable!</p>
+            <img src="images/first-adventure.jpg" alt="A snapshot from our first adventure">
+        </div>
+        <div class="timeline-item">
+            <h2>Looking Ahead</h2>
+            <p>Here's to many more adventures and memories to come!</p>
+            <img src="images/looking-ahead.jpg" alt="A picture symbolizing our future adventures">
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by [Your Name]</p>
+        <p><a href="#">Click here for a surprise!</a></p>
+    </footer>
+
+    <script>
+        document.querySelector('footer a').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('I love you more than words can say! 💖');
+        });
+    </script>
+</body>
+</html>
